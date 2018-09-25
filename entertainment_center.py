@@ -1,7 +1,7 @@
 import media
 import fresh_tomatoes
 
-""" Essa classe seta as informacoes dos filmes criando instancias da classe media"""
+""" Essa classe seta as informacoes dos filmes criando instancias da classe media """
 
 scream = media.Movie('Scream','A year after the murder of her mother, a teenage girl is terrorized by a new killer, who targets the girl and her friends by using horror films as part of a deadly game.',
                         'https://upload.wikimedia.org/wikipedia/pt/5/5f/Scream_p%C3%B4ster.jpg',

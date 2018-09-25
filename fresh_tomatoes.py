@@ -2,8 +2,7 @@ import webbrowser
 import os
 import re
 
-
-# Styles and scripting for the page
+    """ estilos da pagina """
 main_page_head = '''
 <!DOCTYPE html>
 <html lang="en">
@@ -19,6 +18,7 @@ main_page_head = '''
     <style type="text/css" media="screen">
         body {
             padding-top: 80px;
+            background-color: #F7F3F3;
         }
         #trailer .modal-dialog {
             margin-top: 200px;
@@ -40,7 +40,7 @@ main_page_head = '''
             padding-top: 20px;
         }
         .movie-tile:hover {
-            background-color: #EEE;
+            background-color: #DDCECD;
             cursor: pointer;
         }
         .scale-media {
@@ -55,6 +55,17 @@ main_page_head = '''
             left: 0;
             top: 0;
             background-color: white;
+        }
+        .bg-title {
+            background: #D66D75;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #E29587, #D66D75);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #E29587, #D66D75); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+        .color-title {
+            color: #3C3C3B;
+            font-size: 32px;
+            font-family: "Courier New";
         }
     </style>
     <script type="text/javascript" charset="utf-8">
@@ -85,8 +96,8 @@ main_page_head = '''
 </head>
 '''
 
+    """ estilo do modal em que aparece o trailer """
 
-# The main page layout and title bar
 main_page_content = '''
   <body>
     <!-- Trailer Video Modal -->
@@ -104,10 +115,10 @@ main_page_content = '''
 
     <!-- Main Page Content -->
     <div class="container">
-      <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="navbar navbar-fixed-top bg-title" role="navigation">
         <div class="container">
           <div class="navbar-header">
-            <a class="navbar-brand" href="#">Camila's Movies Trailers</a>
+            <a class="color-title" href="#">Filmes favoritos da Camila</a>
           </div>
         </div>
       </div>
