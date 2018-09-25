@@ -2,7 +2,7 @@ import webbrowser
 import os
 import re
 
-    """ estilos da pagina """
+""" estilos da pagina """
 main_page_head = '''
 <!DOCTYPE html>
 <html lang="en">
@@ -96,7 +96,7 @@ main_page_head = '''
 </head>
 '''
 
-    """ estilo do modal em que aparece o trailer """
+""" estilo do modal em que aparece o trailer """
 
 main_page_content = '''
   <body>
