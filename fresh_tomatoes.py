@@ -141,7 +141,7 @@ movie_tile_content = '''
 
 
 def create_movie_tiles_content(movies):
-    # The HTML content for this section of the page
+    # The HTML content for this section of the page - teste
     content = ''
     for movie in movies:
         # Extract the youtube ID from the url
